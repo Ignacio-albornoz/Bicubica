@@ -21,7 +21,7 @@ export const SearchBar = ({open, setOpenSearch}) => {
         <WrapBarSearch onBlur={handleBlur} open={open}>
             <Form ref={element} placeholder='Buscar...'></Form>
             <ButtonSearcher >
-                <IoIosSearch size='0.8rem'/>
+                <IoIosSearch size='1.4rem'/>
             </ButtonSearcher>
         </WrapBarSearch>
     )

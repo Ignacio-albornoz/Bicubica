@@ -47,12 +47,12 @@ export const TitleHero = styled.h1`
   font-family: 'Montserrat';
   font-weight: 600;
   color: #ffffffc9;
-  font-size: 0.70rem;
+  font-size: 1.2rem;
 `
 export const P = styled.p`
   font-family: 'Montserrat';
   font-weight: 300;
   color: #ffffffc9;
-  font-size: 0.6rem;
+  font-size: 1rem;
   
 `

@@ -9,7 +9,7 @@ export const Burger = ({ open, setOpen }) => {
   return (
     <>
     <BurgerMenu open={open} onClick={() => setOpen(!open)}>
-      <Icon size='1.0rem' border-radius='50%'/>
+      <Icon size='1.8rem' border-radius='50%'/>
     </BurgerMenu>
     <Menu open={open} setOpen={setOpen}/>
     </>

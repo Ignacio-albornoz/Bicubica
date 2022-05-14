@@ -8,7 +8,7 @@ export const BurgerFloting = ({ openFloting, setOpenFloting }) => {
   return (
     <>
     <BurgerMenuFloting open={openFloting} onClick={() => setOpenFloting(!openFloting)}>
-      <Icon size='1.0rem' border-radius='50%'/>
+      <Icon size='1.8rem' border-radius='50%'/>
     </BurgerMenuFloting>
     <Menu open={openFloting}/>
     </>

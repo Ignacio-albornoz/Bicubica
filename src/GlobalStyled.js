@@ -1,10 +1,26 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  
+  html{ 
+    height: 98vh;
+    font-size: 24px; 
+  }
+  body{ 
+    max-width: 1024px;
+    min-height: 100vh;
+  }
   @media only screen and (max-width: 734px){
     html{
-      font-size: 28px;
+      
+    }
+    body{
+      
+    }
+  }
+  @media only screen and (max-width: 540px){
+    html{
+      font-size: 16px
+      
     }
     body{
       max-width: 736px;
@@ -31,6 +47,7 @@ export const GlobalStyle = createGlobalStyle`
     flex: 1;
     overscroll-behavior: none;
     width: 100%;
+    font-size: 42px;
     text-rendering: optimizeLegibility;
   }
 

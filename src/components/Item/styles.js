@@ -42,7 +42,7 @@ export const Image = styled.img`
 `
 
 export const Title = styled.p`
-    font-size: 0.46rem;
+    font-size: 1rem;
     margin: 0px;
     font-weight:300;
     font-style: italic;
@@ -53,7 +53,7 @@ export const Title = styled.p`
 `
 export const Price = styled.p`
     font-family: 'Montserrat';
-    font-size: 0.35rem;
+    font-size: 1rem;
     font-weight:600;
     margin: 3px;
     color: #000;

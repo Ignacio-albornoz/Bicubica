@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {NavBar} from '../NavBar/index';
+import { WrapLayout } from "./styles";
+import { NavBar } from '../NavBar/index';
 import { Hero } from '../Hero/index';
 
 
@@ -35,11 +36,11 @@ export const Layout = (props) => {
   
   
   return (
-    <React.Fragment>
+    <WrapLayout>
       <NavBar />
       {show && renderFix}
       {props.children}
-    </React.Fragment>
+    </WrapLayout>
   );
 }
 

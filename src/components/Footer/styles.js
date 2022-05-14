@@ -14,7 +14,7 @@ export const ContainerFooter = styled.div`
 export const P = styled.p`
     display:inline;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-family: 'Montserrat';
     font-stretch: 1px;
     letter-spacing: -0.8px;
@@ -26,7 +26,7 @@ export const Title = styled.h1`
     font-weight: 300;
     letter-spacing: -1.2px;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #FFF;
 `
 

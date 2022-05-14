@@ -5,7 +5,7 @@ export const CategoryWrap = styled.div`
     display:flex;
     top: 65px;
     border: 1px solid #fafafa;
-    height: 0.8rem;
+    height: 1rem;
     width: 5.2rem;
     align-items: center;
 

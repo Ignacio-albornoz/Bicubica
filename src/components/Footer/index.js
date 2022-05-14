@@ -13,16 +13,16 @@ export const Footer = () => {
             <ContainerFooter>
                 <ButtonWrap>
                     <ButtonSocialMedia href='https://www.instagram.com/bicubica.art/?hl=es-la'>
-                        <IoLogoInstagram size="1.0rem"/>
+                        <IoLogoInstagram size="1.8rem"/>
                     </ButtonSocialMedia>
                     <ButtonSocialMedia href='https://www.facebook.com/B-I-C-U-B-I-C-A-152792052211875/'>
-                        <TiSocialFacebook  size="1.0rem"/>
+                        <TiSocialFacebook  size="1.8rem"/>
                     </ButtonSocialMedia>
                     <ButtonSocialMedia onClick = {() => {alert('0342-1234124')}}>
-                        <FaWhatsapp size="1.0rem"/>
+                        <FaWhatsapp size="1.8rem"/>
                     </ButtonSocialMedia>
                     <ButtonSocialMedia >
-                        <MdMail size="1.0rem"/>
+                        <MdMail size="1.8rem"/>
                     </ButtonSocialMedia>
                 </ButtonWrap>
             </ContainerFooter>

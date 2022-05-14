@@ -11,9 +11,11 @@ const moventUp = keyframes`
 
 
 export const Container = styled.div`
+    min-height: 46vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center ;
     text-align:center;
     padding-top: 10px;
     position: relative;
@@ -24,17 +26,25 @@ export const Container = styled.div`
     animation-fill-mode: forwards;
     animation: 1.3s ${moventUp} ease-in-out;
     box-shadow: 0 2px 2px #a09b95;
-    
+
+    @media only screen and (max-width: 456px){
+      min-height: 56vh;
+    }
+
+    @media only screen and (max-width: 425px){
+      min-height: 56vh;
+    }
+    @media only screen and (max-width: 344px){
+      min-height: 60vh;
+    }
 `
 
 export const Title = styled.h1`
     margin-bottom: -2px;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 0.58rem;
+    font-size: 1.2rem;
     margin-top: 15px;
-
-
 `
 export const List = styled.ul`
   display: flex;
@@ -44,7 +54,6 @@ export const List = styled.ul`
   overflow-y:hidden;
   width: 100%;
   flex-direction: row;
-  
 `
 
 export const Li = styled.li`
@@ -54,11 +63,9 @@ export const Li = styled.li`
   width: 45%;
   
   & a {
-    
     margin-bottom: 7px;
   }
   a:hover{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
-    
   }
 `

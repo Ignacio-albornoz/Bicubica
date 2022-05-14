@@ -13,7 +13,8 @@ const AnimationNavBar = keyframes`
 
 export const NavBarContainer = Styled.div`
     display: flex;
-    width: 100vw;
+    width: 100%;
+    max-width: 1024px;
     align-items: center;
     text-align:center;
     justify-content: space-between;
@@ -21,8 +22,8 @@ export const NavBarContainer = Styled.div`
     z-index: 2;
     background: #fff;
     padding-left: 1.5%;
-    padding-right: 3%;
-    height: 1.6rem;
+    padding-right: 1.5%;
+    height: 2rem;
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, .2);
     ${props => props.fixed && css`
       animation: 0.3s ${AnimationNavBar} ease;
@@ -62,6 +63,7 @@ export const BurgerMenu = Styled.button`
 export const Tittle = Styled(Link)`
   font-family: 'Montserrat';
   font-weight: 300;
+  font-size: 1.8rem;
   letter-spacing: -1.2px;
   text-decoration: none;
   width: 150px;

@@ -12,11 +12,11 @@ export const SeachShoppingCart = () => {
     return(
     <WrapButtons>
         <Search onClick={ () => setOpenSearch(!openSearch)} >
-            <IoIosSearch size='0.8rem'/>
+            <IoIosSearch size='1.4rem'/>
         </Search>
         <SearchBar  setOpenSearch={setOpenSearch} open={openSearch} />
         <ShoppingCart>
-            <IoIosCart size='0.8rem'/>
+            <IoIosCart size='1.4rem'/>
         </ShoppingCart>
     </WrapButtons>
 )

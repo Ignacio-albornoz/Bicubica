@@ -7,6 +7,7 @@ export const WrapButtons = Styled.div`
   justify-content: flex-end;
   & button {
     padding:1px;
+    align-items: center;
     color: rgba(0, 0 , 0, 0.75);
   }
   button:hover{
@@ -20,10 +21,10 @@ export const Search = Styled.button`
   display: flex;
   align-items: center;
   justify-content:center;
-  width: 35px;  
+  width: 1.9rem;
 `
 export const ShoppingCart = Styled.button`
   display: flex;
   justify-content:center;
-  width: 35px;  
+  width: 1.9rem;  
 `

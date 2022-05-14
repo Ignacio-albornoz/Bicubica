@@ -27,7 +27,7 @@ export const StyledMenu = styled.nav`
 `
 
 export const A = styled(Link)`
-  font-size: 0.5rem;
+  font-size: 1rem;
   border-top: 1px solid #0000000f;
   text-transform: uppercase;
   padding: 0.5rem 0;
@@ -41,7 +41,7 @@ export const A = styled(Link)`
   font-weight: 300;
 
   @media (max-width: 425px) {
-    font-size: 0.5rem;
+    font-size: 1rem;
     text-align: center;
   }
 
