@@ -4,10 +4,16 @@ export const ImgWrapper = styled.div`
   display: block;
   height: 0;
   overflow: hidden;
-  padding: 80.25% 0 0 0;
+  padding: 50.25% 0 0 0;
   position: relative;
   width: 100%;
   background: #a09b95;
+  @media only screen and (max-width: 734px){
+    padding: 50.25% 0 0 0;
+  }
+  @media only screen and (max-width: 540px){
+    padding: 80.25% 0 0 0;
+  }
 `
 
 export const Img = styled.img`

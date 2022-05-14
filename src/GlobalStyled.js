@@ -3,28 +3,24 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   html{ 
     height: 98vh;
-    font-size: 24px; 
+    font-size: 18px; 
   }
   body{ 
     max-width: 1024px;
-    min-height: 100vh;
+    height: 98vh;
   }
   @media only screen and (max-width: 734px){
     html{
-      
+      font-size: 16px
     }
-    body{
-      
-    }
+
   }
   @media only screen and (max-width: 540px){
     html{
-      font-size: 16px
+      font-size: 12px
       
     }
-    body{
-      max-width: 736px;
-    }
+
   }
   html {
     box-sizing: border-box;

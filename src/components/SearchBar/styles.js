@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const WrapBarSearch = styled.div`
     display: flex;
-    max-width: 80vw;
+    max-width: 76vw;
     align-items: center;
     justify-content: space-between;
     text-align:center;
@@ -17,7 +17,7 @@ export const WrapBarSearch = styled.div`
     margin: auto;
     top: 3rem;
     border-radius: 8px;
-    padding: 1% 2%;
+    padding: 0 4px;
     transition: clip-path 0.45s ease-in-out;
     clip-path: ${({ open }) => open ? 'circle(150% at 100% 0%)' : 'circle(0% at 100% 0%)'};
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -33,7 +33,7 @@ export const Form =  styled.input`
     border-bottom-left-radius: 8px;
     background: #fff;
     border-style: none;
-    padding-left: 2%;
+    padding-left: 1%;
     font-family: 'Montserrat';
     
     

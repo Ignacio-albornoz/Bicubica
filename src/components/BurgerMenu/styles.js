@@ -15,9 +15,7 @@ export const BurgerMenu = styled.button`
   }
 
   & svg:hover{
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-    background: rgba(0, 0 , 0, 0.06);
-
-
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    background: rgba(0, 0 , 0, 0.01);
   }
 `
