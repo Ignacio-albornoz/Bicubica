@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledMenu = styled.nav`
   display: flex;
@@ -16,15 +16,15 @@ export const StyledMenu = styled.nav`
   right: 0;
   top: 0px;
   transition: clip-path 0.7s ease-in-out;
-  
-  clip-path: ${({ open }) => open ? 'circle(150% at 0% 0%)' : 'circle(0% at 0% 0%)'};
-  
-    @media (min-width: 719px) {
-      height: 45vh;
-      min-height: 220px;
-    }
 
-`
+  clip-path: ${({ open }) =>
+    open ? "circle(150% at 0% 0%)" : "circle(0% at 0% 0%)"};
+
+  @media (min-width: 719px) {
+    height: 45vh;
+    min-height: 220px;
+  }
+`;
 
 export const A = styled(Link)`
   font-size: 1rem;
@@ -35,9 +35,9 @@ export const A = styled(Link)`
   letter-spacing: 1px;
   text-decoration: none;
   transition: color 0.3s linear;
-  text-decoration-style:none;
+  text-decoration-style: none;
   color: black;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 300;
 
   @media (max-width: 425px) {
@@ -46,6 +46,5 @@ export const A = styled(Link)`
   }
 
   &:hover {
-    
   }
-` 
+`;

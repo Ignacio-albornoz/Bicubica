@@ -1,4 +1,4 @@
-const express = require('express')
+/*const express = require('express')
 const cors = require('cors')
 const { ApolloServer } = require('apollo-server-express')
 const { resolvers, typeDefs } = require('./schema')
@@ -54,4 +54,4 @@ if (!process.env.NOW_REGION) {
   })
 }
 
-module.exports = app
+module.exports = app*/

@@ -1,21 +1,36 @@
-import React from 'react';
-import {Title, Price, Info, ButtonComprar} from './styles'
+import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { Title, Price, Info, ButtonComprar, ButtonShow} from "./styles";
 
+export const DetailInfo = ({
+  detailId,
+  title,
+  price,
+  description,
 
+}) => {
+  
 
-export const DetailInfo = ({ titleCuadro = 'Cuadro Muestra', price = '10.500',  description = ''}) => (
+  const number = description.length;
+  const descriptionLength = number / 2;
+  const [showMore, setShowMore] = useState(500);
+  const ShowMore = () => {
+    showMore > description.length ? setShowMore(300) : setShowMore( showMore + descriptionLength )
+  }
+  console.log(number);
 
-    <>
-            <Title>{titleCuadro}</Title>
-            <Price>$ {price}</Price>
-            <Info>TRUST YOURSELF LÁMINA
+  return(
+  
+  <>
+    <Title>{title}</Title>
+    <Price>${price}</Price>
+    <Info>
+      {descriptionLength ? description.split('', showMore) : 'loading'}
+    </Info>
+    <ButtonShow onClick={() => ShowMore()}> ver mas </ButtonShow>
 
-                * Láminas Fine Art impresas sobre papel Fine Art Hahnemühle® de acabado mate libre de ácido.
+    <ButtonComprar>Comprar</ButtonComprar>
+  </>
+  
+);}
 
-                * Tipo de Impresión: Técnica "Giclée" utilizando impresoras de gran formato de 12 tintas pigmentadas.
-
-                * La impresión se realiza en nuestro taller y se somete a un control de calidad final antes de enviarse.
-            </Info>
-            <ButtonComprar>Comprar</ButtonComprar>
-        </>
-)

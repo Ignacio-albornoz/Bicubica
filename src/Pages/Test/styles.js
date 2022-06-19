@@ -1,6 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Div = styled.div`
-     overflow-y: hidden
-
-`
+  overflow-y: hidden;
+`;

@@ -1,0 +1,10 @@
+{
+    "totalPrice": 0,
+    "cartList": [],
+    "detailId": [],
+    "user": {
+        "active": false,
+        "email": "invitado"
+    }
+}
+  
