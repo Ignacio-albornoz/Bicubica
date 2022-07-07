@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Title = styled.h3`
   font-family: "Montserrat";
   font-weight: 600;
-  letter-spacing: -1.2px;
-  font-size: 1rem;
+  letter-spacing: -1.4px;
+  font-size: 1.1rem;
   color: #000;
   margin-bottom: 5px;
 `;
@@ -12,15 +12,15 @@ export const Title = styled.h3`
 export const Price = styled.h3`
   font-family: "Montserrat";
   font-weight: 600;
-  letter-spacing: -0.2px;
-  font-size: 1.5rem;
+  letter-spacing: -0.1px;
+  font-size: 1.6rem;
   color: #000000a1;
   margin-bottom: 7px;
 `;
 
 export const Info = styled.p`
   font-family: "Montserrat";
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: -0.7px;
   font-size: 0.8rem;
   color: #000000a6;

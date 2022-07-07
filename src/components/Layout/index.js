@@ -7,24 +7,33 @@ import { Hero } from "../Hero/index";
 export const LayoutContainer = ({props, detailId})=> {
   const [renderFix, setRenderFix] = useState(<Hero />);
   const [show, setShow] = useState(false);
+  const URI = location.pathname.split('/')
+  
+
   useEffect(
     function() {
-      console.log('props' + props.match);
+
       switch (location.pathname) {
         case "/":
           setRenderFix(<Hero />);
           setShow(true);
           break;
 
-        case `/detail/${detailId[0]}`:
+        case `/detail/${URI[2]}`:
           setRenderFix(false);
           setShow(false);
+          break;
+          
+        case "/detail/":
+          setRenderFix(<Hero text="Store" />);
+          setShow(true);
           break;
 
         case "/test":
           setRenderFix(<Hero text="Store" />);
           setShow(true);
           break;
+
 
         default:
           setRenderFix(<Hero />);

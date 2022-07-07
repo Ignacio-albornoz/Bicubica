@@ -9,7 +9,8 @@
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open --mode development",
     "format": "prettier --write {*.js,src/**/*.{js,jsx}}",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git-push": "git push https://github.com/Ignacio-albornoz/Bicubica.git"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

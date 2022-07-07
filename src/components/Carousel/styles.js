@@ -7,6 +7,7 @@ export const MainImgWraper = styled.div`
   margin: 0 auto;
   padding: 0;
   z-index: 0;
+  
 
   @media (max-width: 724px) {
     width: 72%;
@@ -34,7 +35,7 @@ export const ButtomsCWraper = styled.ul`
 `;
 
 export const Img = styled.img`
-  width: inherit;
+  width: 320px;
   display: flex;
   object-fit: contain;
   margin: 0;

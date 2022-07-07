@@ -38,8 +38,9 @@ export const App = () => {
               <Route exact path='/detail/:detailId' component={Detail} />
               <Route exact path="/test" component={Test} />
               <Route exact path='/detail/undefined' component={Home} />
+              {console.log(location)}
             </Layout>:
-            console.log('aaa')
+            console.log('LOADING!')
 
         }
         </Switch>

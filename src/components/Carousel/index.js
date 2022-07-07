@@ -1,22 +1,28 @@
 import React, { useRef, useEffect, useState } from "react";
 import { CarouselItem } from "../CarouselItem";
 import { MainImgWraper, ButtomsCWraper, Img, ButtonCarousel } from "./styles";
+const CAROUSEL_IMAGE_SIZE = 320;
 
 
 export const Carousel = ({ price,id , title, thumbnail_id,
   thumbnail,}) => {
 
+
+  console.log(thumbnail_id)
   const [showImage, setImage] = useState(1);
   const element = useRef(null);
   console.log(price)
   const [itemImage, setItemImage] = useState(false);
   const API = `https://api.mercadolibre.com/pictures/?ids=${thumbnail_id}`;
-  const SIZE_IMAGE = "320x320";
+  const SIZE_IMAGE = `${CAROUSEL_IMAGE_SIZE}x${CAROUSEL_IMAGE_SIZE}`;
   const URL_ID = `/detail/${id}`
 
   useEffect(() => {
     try {
-      fetch(API).then((res) => res.json()).then((data) => setItemImage(data[0].variations.filter((image) => image.size === SIZE_IMAGE)));
+      fetch(API)
+      .then((res) => res.json())
+      .then((data) => setItemImage(data[0].variations.filter((image) => image.size === SIZE_IMAGE)));
+
   } catch (e) {
       console.error(e);
   }

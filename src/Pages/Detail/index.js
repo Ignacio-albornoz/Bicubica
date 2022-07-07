@@ -20,6 +20,8 @@ export const DetailContainer = ({ detailId, items} ) => {
 
 return(
   <>
+    {
+    description ?
     <Container>
       <CarouselWrap>
         <Carousel {...item}/>
@@ -27,7 +29,9 @@ return(
       <DetailWrap>
         <DetailInfo {...item} description={description}/>
       </DetailWrap>
-    </Container>
+    </Container> :
+    console.log('Detail Loading')
+    }
   </>
 )}
 
