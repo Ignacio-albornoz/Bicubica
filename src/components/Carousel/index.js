@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { CarouselItem } from "../CarouselItem";
 import { MainImgWraper, ButtomsCWraper, Img, ButtonCarousel } from "./styles";
-const CAROUSEL_IMAGE_SIZE = 320;
+const CAROUSEL_IMAGE_SIZE = 500;
 
 
 export const Carousel = ({ price,id , title, thumbnail_id,
@@ -54,3 +54,4 @@ export const Carousel = ({ price,id , title, thumbnail_id,
     </>
   );
 };
+

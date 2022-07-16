@@ -26,7 +26,7 @@ const ListOfCategoriesContainer = ({
       <List>
         {categories
           ? categories.map(item => (
-              <Li key={item.id}>
+              <Li key={item.index}>
                 <Button
                   onClick={() => setCategory(item) & setTitleCategory(item)}
                 >

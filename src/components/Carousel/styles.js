@@ -25,17 +25,17 @@ export const ButtomsCWraper = styled.ul`
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  height: 6rem;
+  height: inherit;
   top: 2rem;
-  margin: 15% 0;
-  padding: 0;
+  
+  padding: 0 10%;
   z-index: 1;
   overflow-x: hidden;
   overflow-y: scroll;
 `;
 
 export const Img = styled.img`
-  width: 320px;
+  width: inherit;
   display: flex;
   object-fit: contain;
   margin: 0;

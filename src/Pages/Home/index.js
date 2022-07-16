@@ -10,7 +10,7 @@ export const Home = () => {
   const [titleCategory, setTitleCategory] = useState("Mas Vendidos");
 
   return (
-    <div>
+    <>
       <Categories>
         <ListOfCategories
           setCategory={setCategory}
@@ -19,6 +19,6 @@ export const Home = () => {
         <ListOfItems categoryNumber={category} title={titleCategory} />
       </Categories>
       <Footer />
-    </div>
+    </>
   );
 };
